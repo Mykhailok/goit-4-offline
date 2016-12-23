@@ -33,7 +33,7 @@ public class Order {
             joinColumns = @JoinColumn(name = "pizza_id"),
             inverseJoinColumns = @JoinColumn(name = "order_id"))
     private List<Pizza> pizzas;
-
+//select o.pizzas.name from Order o -> get name pizzas from orders
     public List<Pizza> getPizzas() {
         return pizzas;
     }
