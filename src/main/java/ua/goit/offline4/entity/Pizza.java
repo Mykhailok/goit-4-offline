@@ -27,8 +27,9 @@ public class Pizza {
     private long id;
     private String name;
     private BigDecimal prize;
-    @OneToMany(mappedBy = "pizza", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private List<PizzaComponents> components;
+
+    //@OneToMany(mappedBy = "pizza", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    //private List<PizzaComponents> components;
 
     public long getId() {
         return id;
@@ -54,7 +55,7 @@ public class Pizza {
         this.prize = prize;
     }
 
-    public List<PizzaComponents> getComponents() {
+    /*public List<PizzaComponents> getComponents() {
         return components;
     }
 
@@ -65,5 +66,5 @@ public class Pizza {
     @Override
     public String toString() {
         return "Pizza{" + "id=" + id + ", name='" + name + '\'' + ", prize=" + prize + ", components=" + components + '}';
-    }
+    }*/
 }
